@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>sorting-algorithms.png</file>
+    </qresource>
+</RCC>
