@@ -87,6 +87,11 @@ MainWindow::MainWindow(QWidget *parent)
     ui->comboBox->addItem("Gnome Sort");
     ui->comboBox->addItem("Pigeonhole Sort");
     ui->comboBox->addItem("Cycle Sort");
+    ui->comboBox->addItem("Odd-Even Sort");
+    ui->comboBox->addItem("Bitonic Sort");
+    ui->comboBox->addItem("Pancake Sort");
+    ui->comboBox->addItem("Cocktail Shaker Sort");
+    ui->comboBox->addItem("Stooge Sort");
 
     // Kết nối nút bấm với hàm xử lý
     connect(ui->pushButton, &QPushButton::clicked, this, &MainWindow::onSortButtonClicked);
@@ -220,6 +225,16 @@ void MainWindow::onAlgorithmComboBoxChanged(const QString &algorithm) {
         summary = "Pigeonhole Sort: A sorting algorithm that is suitable for sorting lists of elements where the number of elements and the number of possible key values are approximately the same.";
     } else if (algorithm == "Cycle Sort") {
         summary = "Cycle Sort: An in-place, unstable sorting algorithm, a comparison sort that is theoretically optimal in terms of the total number of writes to the original array.";
+    } else if (algorithm == "Odd-Even Sort") {
+        summary = "Odd-Even Sort: A simple sorting algorithm that alternates between comparing and swapping adjacent elements on odd and even indexed positions.";
+    } else if (algorithm == "Bitonic Sort") {
+        summary = "Bitonic Sort: A parallel sorting algorithm that builds bitonic sequences and sorts them.";
+    } else if (algorithm == "Pancake Sort") {
+        summary = "Pancake Sort: A sorting algorithm that sorts by flipping subarrays.";
+    } else if (algorithm == "Cocktail Shaker Sort") {
+        summary = "Cocktail Shaker Sort: A variation of Bubble Sort that sorts in both directions.";
+    } else if (algorithm == "Stooge Sort") {
+        summary = "Stooge Sort: A recursive sorting algorithm with high time complexity.";
     } else {
         summary = "Select an algorithm to see its summary.";
     }
@@ -319,6 +334,16 @@ void MainWindow::onSortButtonClicked() {
         resultSteps = pigeonholeSortWithSteps(array);
     } else if (selectedAlgorithm == "Cycle Sort") {
         resultSteps = cycleSortWithSteps(array);
+    } else if (selectedAlgorithm == "Odd-Even Sort") {
+        resultSteps = oddEvenSortWithSteps(array);
+    } else if (selectedAlgorithm == "Bitonic Sort") {
+        resultSteps = bitonicSortWithSteps(array);
+    } else if (selectedAlgorithm == "Pancake Sort") {
+        resultSteps = pancakeSortWithSteps(array);
+    } else if (selectedAlgorithm == "Cocktail Shaker Sort") {
+        resultSteps = cocktailShakerSortWithSteps(array);
+    } else if (selectedAlgorithm == "Stooge Sort") {
+        resultSteps = stoogeSortWithSteps(array);
     } else {
         QMessageBox::warning(this, "Error", "Invalid sorting algorithm selected.");
         return;

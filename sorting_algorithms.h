@@ -19,5 +19,10 @@ QString combSortWithSteps(std::vector<int>& arr);
 QString gnomeSortWithSteps(std::vector<int>& arr);
 QString pigeonholeSortWithSteps(std::vector<int>& arr);
 QString cycleSortWithSteps(std::vector<int>& arr);
+QString oddEvenSortWithSteps(std::vector<int>& arr);
+QString bitonicSortWithSteps(std::vector<int>& arr);
+QString pancakeSortWithSteps(std::vector<int>& arr);
+QString cocktailShakerSortWithSteps(std::vector<int>& arr);
+QString stoogeSortWithSteps(std::vector<int>& arr);
 
 #endif // SORTING_ALGORITHMS_H

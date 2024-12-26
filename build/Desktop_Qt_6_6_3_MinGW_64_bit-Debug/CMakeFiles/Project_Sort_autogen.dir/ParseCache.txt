@@ -445,9 +445,9 @@ C:/Users/admin/Documents/Project_Sort/mainwindow.h
  mdp:C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wctype.h
  mdp:C:/Users/admin/Documents/Project_Sort/build/Desktop_Qt_6_6_3_MinGW_64_bit-Debug/Project_Sort_autogen/moc_predefs.h
  mdp:C:/Users/admin/Documents/Project_Sort/mainwindow.h
-C:/Users/admin/Documents/Project_Sort/main.cpp
 C:/Users/admin/Documents/Project_Sort/mainwindow.cpp
  uic:ui_mainwindow.h
+C:/Users/admin/Documents/Project_Sort/main.cpp
 C:/Users/admin/Documents/Project_Sort/sorting_algorithms.h
 C:/Users/admin/Documents/Project_Sort/sorting_algorithms.cpp
 C:/Users/admin/Documents/Project_Sort/utils.h
